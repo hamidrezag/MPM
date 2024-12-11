@@ -1,0 +1,47 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_PAT }}
+
+      - name: Deploy to server
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          password: ${{ secrets.SERVER_SSH_PASSPHRASE }}
+          script: |
+            echo "Current directory: $(pwd)"
+            ls -la
+            cd /website/CiCdTest || exit 1
+            
+            # Check if the .git directory exists to determine if the repo is cloned
+            if [ ! -d ".git" ]; then
+              echo "Cloning repository..."
+              git clone https://hamidrezag:${{ secrets.GH_PAT }}@github.com/hamidrezag/CiCdTest.git . || exit 1
+            else
+              echo "Pulling latest changes..."
+              git remote set-url origin https://hamidrezag:${{ secrets.GH_PAT }}@github.com/hamidrezag/CiCdTest.git
+              git pull origin master || exit 1
+            fi
+            
+            cd ./testapi || exit 1
+            sudo docker stop website || true
+            sudo docker rm website || true
+            sudo docker rmi websiteimage || true
+            sudo docker build -t websiteimage . || exit 1
+            sudo docker run -d -p 80:80 --name website websiteimage || exit 1
