@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Jy3ssxmdx4zKXqtx1E+ZTY5KOOFU32i/37KV3gz4Q8o4h+mMZglLY2ZvnqZJeOqdWCB8YWMTpsTJp7oDbJWztQ==",
+  "dgSpecHash": "6ojhTDuD93SEPGu2mrqom7SDlz+Uny+/ouXDqT4Ye2P/R6mx//rYhzaNU+CTjvItdDaS4XGbxkfzjzIS7K+3bA==",
   "success": true,
   "projectFilePath": "D:\\MPM\\MPM\\MPM\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\hamidreza\\.nuget\\packages\\fluentvalidation\\11.5.1\\fluentvalidation.11.5.1.nupkg.sha512",
+    "C:\\Users\\hamidreza\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.36\\microsoft.aspnetcore.cryptography.internal.6.0.36.nupkg.sha512",
     "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.36\\microsoft.aspnetcore.cryptography.keyderivation.6.0.36.nupkg.sha512",
     "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\6.0.36\\microsoft.aspnetcore.identity.entityframeworkcore.6.0.36.nupkg.sha512",
@@ -16,8 +17,10 @@
     "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.36\\microsoft.entityframeworkcore.6.0.36.nupkg.sha512",
     "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.36\\microsoft.entityframeworkcore.abstractions.6.0.36.nupkg.sha512",
     "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.36\\microsoft.entityframeworkcore.analyzers.6.0.36.nupkg.sha512",
+    "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.36\\microsoft.entityframeworkcore.design.6.0.36.nupkg.sha512",
     "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.36\\microsoft.entityframeworkcore.relational.6.0.36.nupkg.sha512",
     "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\6.0.36\\microsoft.entityframeworkcore.sqlserver.6.0.36.nupkg.sha512",
+    "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.36\\microsoft.entityframeworkcore.tools.6.0.36.nupkg.sha512",
     "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.1\\microsoft.extensions.caching.abstractions.6.0.1.nupkg.sha512",
     "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.3\\microsoft.extensions.caching.memory.6.0.3.nupkg.sha512",
     "C:\\Users\\hamidreza\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\6.0.1\\microsoft.extensions.configuration.abstractions.6.0.1.nupkg.sha512",

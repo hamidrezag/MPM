@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MPM.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController : BaseController
     {
-        public IActionResult Index()
+        [HttpPost("Login")]
+        [AllowAnonymous]
+        public async Task<ActionResult> Login([FromBody] string phonenumber)
         {
-            return View();
+            throw new NotImplementedException();
         }
     }
 }

@@ -13,3 +13,5 @@ D:\MPM\MPM\MPM\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
 D:\MPM\MPM\MPM\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
 D:\MPM\MPM\MPM\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
 D:\MPM\MPM\MPM\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
+D:\MPM\MPM\MPM\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
+D:\MPM\MPM\MPM\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache

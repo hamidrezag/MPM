@@ -19,7 +19,8 @@ namespace Infrastructure.Context
         {
         }
 
-
+        public DbSet<User> User { get; set; }
+        public DbSet<Role> Role { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             //modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetAssembly(typeof(FileConfig)));

@@ -5,6 +5,9 @@ using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.SwaggerUI;
 using Infrastructure.Context;
 using Infrastructure.Utils;
+using MPM.Extensions;
+using MVM.ServiceRegistering;
+using Serilog;
 
 namespace Creadit.WebApi
 {
@@ -13,6 +16,11 @@ namespace Creadit.WebApi
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
+            Log.Logger = new LoggerConfiguration()
+            .ReadFrom.Configuration(Configuration)
+            //.WriteTo.LogToMongoDb()
+            .CreateLogger();
+            //.Enrich.FromLogContext()
         }
         public IConfiguration Configuration { get; }
 
@@ -39,12 +47,12 @@ namespace Creadit.WebApi
             //services.RegisterMiddlewares();
             //services.RegisterValidations();
             //services.RegisterAuthentication(Configuration);
-            //services.RegisterApiVersionning();
+            services.RegisterApiVersionning();
             //services.RegisterRefitClient(Configuration);
             //services.RegisterConfigs(Configuration);
             /////services.AddAllElasticApm();
             //services.RegisterMassTransit(Configuration);
-            //services.AddInfrastructureServiceWithAttribute();
+            services.AddInfrastructureServiceWithAttribute();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -59,18 +67,13 @@ namespace Creadit.WebApi
             app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(name: "shortlink", pattern: "IPay/{phonenumber?}/{iid?}", defaults: new
-                {
-                    controller = "ShortLinks",
-                    action = "IPay"
-                });
                 endpoints.MapControllers();
             });
             app.UseSwagger();
             app.UseSwaggerUI(options =>
             {
-                options.RoutePrefix = string.Empty;
-                options.DocumentTitle = "Creadit Api";
+                options.RoutePrefix = "swagger";
+                options.DocumentTitle = "MPM Api";
 #if DEBUG
                 options.Interceptors = new InterceptorFunctions
                 {
