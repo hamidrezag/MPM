@@ -7,8 +7,8 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["MPM/MPM.csproj", "MPM/"]
-RUN dotnet restore "MPM/MPM.csproj"
+COPY ["MPM.csproj", "MPM/"]
+RUN dotnet restore "MPM.csproj"
 COPY . .
 WORKDIR "/src/MPM"
 RUN dotnet build "MPM.csproj" -c Release -o /app/build
