@@ -103,3 +103,8 @@ D:\MPM\MPM\MPM\MPM\bin\Debug\net6.0\System.Text.Json.dll
 D:\MPM\MPM\MPM\MPM\bin\Debug\net6.0\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
 D:\MPM\MPM\MPM\MPM\bin\Debug\net6.0\Humanizer.dll
 D:\MPM\MPM\MPM\MPM\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
+D:\MPM\MPM\MPM\MPM\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\MPM\MPM\MPM\MPM\bin\Debug\net6.0\Microsoft.Bcl.TimeProvider.dll
+D:\MPM\MPM\MPM\MPM\bin\Debug\net6.0\Application.dll
+D:\MPM\MPM\MPM\MPM\bin\Debug\net6.0\Application.pdb
+D:\MPM\MPM\MPM\MPM\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

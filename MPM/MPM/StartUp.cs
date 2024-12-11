@@ -8,6 +8,7 @@ using Infrastructure.Utils;
 using MPM.Extensions;
 using MVM.ServiceRegistering;
 using Serilog;
+using MPM.ServiceRegistering;
 
 namespace Creadit.WebApi
 {
@@ -46,7 +47,7 @@ namespace Creadit.WebApi
             services.ConfigureOptions<ConfigureSwaggerOptions>();
             //services.RegisterMiddlewares();
             //services.RegisterValidations();
-            //services.RegisterAuthentication(Configuration);
+            services.RegisterAuthentication(Configuration);
             services.RegisterApiVersionning();
             //services.RegisterRefitClient(Configuration);
             //services.RegisterConfigs(Configuration);
