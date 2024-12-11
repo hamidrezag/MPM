@@ -1,0 +1,11 @@
+D:\MPM\MPM\MPM\MPM\obj\Release\net6.0\PubTmp\Out\MPM.exe
+D:\MPM\MPM\MPM\MPM\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+D:\MPM\MPM\MPM\MPM\obj\Release\net6.0\PubTmp\Out\appsettings.json
+D:\MPM\MPM\MPM\MPM\obj\Release\net6.0\PubTmp\Out\MPM.dll
+D:\MPM\MPM\MPM\MPM\obj\Release\net6.0\PubTmp\Out\MPM.deps.json
+D:\MPM\MPM\MPM\MPM\obj\Release\net6.0\PubTmp\Out\MPM.runtimeconfig.json
+D:\MPM\MPM\MPM\MPM\obj\Release\net6.0\PubTmp\Out\MPM.pdb
+D:\MPM\MPM\MPM\MPM\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+D:\MPM\MPM\MPM\MPM\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+D:\MPM\MPM\MPM\MPM\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\MPM\MPM\MPM\MPM\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
